@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<StackPane prefWidth="400" prefHeight="400" xmlns:fx="http://javafx.com/fxml" fx:controller="manager.student.FormController" >
+  <children>
+    <StackPane>
+      <children>
+        <VBox>
+          <children>
+            <GridPane >
+              <children>
+                <Label text="شماره دانشجویی:" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <Label text="نام:" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Label text="نام خانوداگی:" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Label text="معدل:" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Label text="واحد پاس شده:" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <Label text="گرایش:" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <TextField fx:id="stId" promptText="شماره دانشجویی" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <TextField fx:id="name" promptText="نام" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="familyName" promptText="نام خانوادگی" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="score" promptText="معدل" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="passed" promptText="واحدها" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="trend" promptText="گرایش" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+              </children>
+<!--              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80" minWidth="80" prefWidth="80" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80" minWidth="80" prefWidth="80" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80" minWidth="80" prefWidth="80" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80" minWidth="80" prefWidth="80" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80" minWidth="80" prefWidth="80" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80" minWidth="80" prefWidth="80" />
+              </columnConstraints>-->
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="50" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane>
+                <children> 
+                    <Button fx:id="submit" alignment="CENTER" 
+                            defaultButton="true" mnemonicParsing="false" 
+                            text="ثبت" GridPane.columnIndex="0" 
+                            GridPane.rowIndex="2"/>
+                    <Button fx:id="show" alignment="CENTER" 
+                            defaultButton="true" mnemonicParsing="false" 
+                            text="نمایش" GridPane.columnIndex="1" 
+                            GridPane.rowIndex="2"/>
+                </children>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="50" vgrow="SOMETIMES" />
+                </rowConstraints>
+            </GridPane>
+          </children>
+        </VBox>
+      </children>
+    </StackPane>
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+</StackPane>
